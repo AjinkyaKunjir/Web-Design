@@ -1,0 +1,35 @@
+li {
+    list-style: none;
+}
+li:before {
+    content: "✓ ";
+}
+input {
+    border: none;
+    width: 80px;
+    font-size: 14px;
+    padding: 2px;
+}
+input:hover {
+    background-color: #eee;
+}
+input:focus {
+    background-color: #ccf;
+}
+input:not(:focus) {
+    text-align: right;
+}
+table {
+    border-collapse: collapse;  
+}
+td {
+    border: 1px solid #999;
+    padding: 0;
+}
+tr:first-child td, td:first-child {
+    background-color: #ccc;
+    padding: 1px 3px;
+    font-weight: bold;
+    text-align: center;
+}
+.append_del_row_col{color:black !important;background-color:#FFD6D6 !important;border:1px #ccc solid !important;}
