@@ -1,0 +1,79 @@
+#todo-area {
+    overflow: hidden;
+    height: 90%;
+  }
+  
+  #todo-area .todo {
+    overflow: hidden;
+    width: 100%;
+    min-height: 50px;
+    float: left;
+    font-size: 14px;
+    font-weight: 500;
+   
+    /*color: #444;*/
+    line-height: 22px;
+    /*background: #fff;*/
+    background-color: #f54343;
+    border-radius: 0px;
+    position: relative;
+    box-shadow: 0px 1px 2px rgba(44, 62, 80, 0.10);
+    margin: 0 0 1px 0;
+    margin-color:#000000;
+    /*padding: 14px 100px 14px 14px;*/
+    padding: 14px 14px 14px 14px;
+    word-break: break-word;
+  }
+  
+  .todo .todo-id .buttons {
+    width: 80px;
+     
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    float: right;
+  }
+  
+  .todo .todo-id .buttons button {
+    width: 40px;
+  
+    height: 40px;
+    float: left;
+    background: none;
+     
+    position: relative;
+    border: 0px;
+    box-shadow: none;
+    outline: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  
+  img {
+    width: 25px;
+    height: 25px;
+    background-color: #fdfdfd; 
+  }
+  //todo areas
+  .container {
+    width: 100%;
+    float: left;
+     
+    padding: 200px 15px 15px 15px;
+    top: 0;
+    left: 0;
+  }
+  
+  /*separting todo items*/
+  .todo {
+    background: #f7f7f7;
+    padding: 10px;
+  }
+  
+  .completed {
+    text-decoration: line-through;
+    background:#fdfdfd;
+  }
+  

@@ -1,0 +1,13 @@
+<div *ngIf="todo" id=updateToDo >
+  <h2>Update {{todo.title}}</h2>
+ 
+  <div><label>ID: </label>{{todo.id}}</div>
+  <div >
+    <label>Update Category </label>
+    <input [(ngModel)]="todo.title" placeholder="name" />
+    <label>Update Todo item</label>
+    <textarea [(ngModel)]="todo.description" placeholder="description" id="description"></textarea>
+    <button (click)="save()"><img src="assets/png/save.png"></button>
+	<p>Update and Save</p>
+  </div>
+</div>

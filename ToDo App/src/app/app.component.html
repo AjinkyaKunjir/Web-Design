@@ -1,0 +1,32 @@
+<app-nav> </app-nav>
+
+<app-add-todo></app-add-todo>
+
+<div id="container">
+  <div id="todo-area">
+    <div class="todo" *ngFor="let todo of todos" (click)="onSelect(todo)">
+      <div class="todo-id" style="display:table">
+        <b>ID: </b>{{todo.id}} <br>
+        <b>Title: </b>{{todo.title}}<br>
+        <b>Author: </b>{{todo.authorname}}<br>
+        <b>Last Updated: </b>{{todo.updated | date: 'M/d/yy, h:mm a'}}<br>
+      </div>
+      <div class="add-todo-item" *ngIf="todo.done" [class.completed]="todo.done==true">
+        <b>Tasks: </b>{{todo.description}}
+      </div>
+      <div class="add-todo-item" *ngIf="!todo.done" [class.todo]="todo.done==true">
+        <b>Tasks: </b>{{todo.description}}
+      </div>
+      <div class="buttons">
+        <button class="remove" (click)="removeTodoItem(todo)">
+          <img src="assets/png/trash.png">
+        </button>
+        <button class="complete" (click)="toggleTodoItem(todo)">
+          <img src="assets/png/checkmark.png">
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-todo-detail [todo]="selectedTodo"></app-todo-detail>

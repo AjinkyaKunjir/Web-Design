@@ -1,0 +1,43 @@
+label {
+    display: block;
+    width: 20em;
+    margin: .5em 0;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+	
+  }
+  
+  .updateToDo {
+  color: #f7e6e6;
+   }
+  input {
+    height: 2em;
+    font-size: 1em;
+   
+    width: 41em;
+	background-color:#f7e6e6;
+  }
+  textarea{
+    height: 5em;
+    font-size: 1em;
+    padding-left: .4em;
+    width: 50em;
+	background-color:#f7e6e6;
+  }
+  button {
+    margin-top: 20px;
+	margin-right: 10px;
+    font-family: Arial;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer; cursor: hand;
+  }
+  button:hover {
+    background-color: #ffffff;
+  }
+ /* button:disabled {
+    background-color: #eee;
+    color: #ccc; 
+    cursor: auto;
+  }*/
